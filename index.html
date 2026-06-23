@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenClaw Device Activity Log</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">OpenClaw activity on this device</p>
+        <h1>Device Activity Log</h1>
+        <p class="lede">
+          A public, sanitized record of the bot setup and file changes performed in
+          the OpenClaw workspace. Secrets, tokens, private environment values, and
+          database contents are intentionally not published.
+        </p>
+      </section>
+
+      <section class="summary" aria-label="Current state">
+        <div>
+          <span class="label">Current running bot</span>
+          <strong>@Gambling123969bot</strong>
+          <p>GitHub commit-summary Telegram bot running with polling.</p>
+        </div>
+        <div>
+          <span class="label">Current process</span>
+          <strong>PID 10404</strong>
+          <p>Started from <code>github-commit-summary-bot/bot.py</code>.</p>
+        </div>
+        <div>
+          <span class="label">Public safety rule</span>
+          <strong>Secrets redacted</strong>
+          <p>Bot tokens and <code>.env</code> values are kept off this site.</p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Timeline</h2>
+        <ol class="timeline">
+          <li>
+            <time>2026-06-22 01:35</time>
+            <div>
+              <h3>Existing bots restarted</h3>
+              <p>Restarted the lyrics-link bot and reminder bot.</p>
+              <p class="meta">Reported PIDs: lyrics-link bot 19568, reminder bot 7356.</p>
+            </div>
+          </li>
+          <li>
+            <time>2026-06-22 01:38-01:46</time>
+            <div>
+              <h3>Rhodies prediction bot created</h3>
+              <p>
+                Created a beginner-friendly Python Telegram bot for a fictional
+                sports prediction game using fake Rhodies points.
+              </p>
+              <p class="meta">
+                Files: <code>main.py</code>, <code>requirements.txt</code>,
+                <code>.env.example</code>, <code>README.md</code>, and
+                auto-created <code>database.sqlite</code>.
+              </p>
+            </div>
+          </li>
+          <li>
+            <time>2026-06-22 01:52-01:55</time>
+            <div>
+              <h3>Scenario auto-settlement added</h3>
+              <p>
+                Updated <code>/scenario</code> to generate unique fictional events,
+                accept predictions, and auto-resolve after about five minutes.
+              </p>
+              <p class="meta">Reported restarted PID: 14448.</p>
+            </div>
+          </li>
+          <li>
+            <time>2026-06-22 02:03-02:05</time>
+            <div>
+              <h3>Rhodies bot reverted to a blank slate</h3>
+              <p>
+                Replaced the feature bot with a minimal Telegram bot that only
+                responds to <code>/start</code> and <code>/help</code>.
+              </p>
+              <p class="meta">
+                Old database was backed up as
+                <code>database.sqlite.backup-20260622-020434</code>.
+              </p>
+            </div>
+          </li>
+          <li>
+            <time>2026-06-23 18:05-18:07</time>
+            <div>
+              <h3>One-minute reminder tested</h3>
+              <p>Scheduled a one-shot reminder that sent <q>hi</q> after one minute.</p>
+              <p class="meta">The scheduled delivery completed successfully.</p>
+            </div>
+          </li>
+          <li>
+            <time>2026-06-23 18:08-18:10</time>
+            <div>
+              <h3>Blank Telegram bot started again</h3>
+              <p>
+                Created a local <code>.env</code> for the blank bot, installed or
+                verified dependencies, added a root <code>.gitignore</code>, and
+                started the bot.
+              </p>
+              <p class="meta">Reported PID: 8692.</p>
+            </div>
+          </li>
+          <li>
+            <time>2026-06-23 18:44-18:45</time>
+            <div>
+              <h3>Bot API test sent once</h3>
+              <p>
+                Sent one direct Telegram API test message from the bot:
+                <q>Bot test: it works.</q>
+              </p>
+              <p class="meta">Telegram API returned success for the send.</p>
+            </div>
+          </li>
+          <li>
+            <time>2026-06-23 19:09-19:11</time>
+            <div>
+              <h3>GitHub commit-summary bot deployed locally</h3>
+              <p>
+                Stopped the blank bot, configured the GitHub commit-summary bot
+                with the Telegram chat ID, compiled it, started polling, and
+                verified the Telegram bot identity.
+              </p>
+              <p class="meta">Current reported PID: 10404.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="grid">
+        <article>
+          <h2>Created or Changed</h2>
+          <ul>
+            <li><code>rhodies-prediction-bot/main.py</code></li>
+            <li><code>rhodies-prediction-bot/README.md</code></li>
+            <li><code>rhodies-prediction-bot/requirements.txt</code></li>
+            <li><code>rhodies-prediction-bot/.env.example</code></li>
+            <li><code>github-commit-summary-bot/bot.py</code></li>
+            <li><code>github-commit-summary-bot/README.md</code></li>
+            <li><code>github-commit-summary-bot/requirements.txt</code></li>
+            <li><code>.gitignore</code></li>
+          </ul>
+        </article>
+        <article>
+          <h2>Not Published</h2>
+          <ul>
+            <li>Telegram bot token values</li>
+            <li><code>.env</code> files</li>
+            <li>GitHub CLI authentication token</li>
+            <li>SQLite database contents</li>
+            <li>Private workspace instruction files</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
